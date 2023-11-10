@@ -1,4 +1,4 @@
-package com.example.reactiverestapijava.models;
+package com.example.reactiverestapijava.model;
 
 import java.util.List;
 

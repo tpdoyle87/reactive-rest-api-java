@@ -1,11 +1,13 @@
-package com.example.reactiverestapijava.models;
+package com.example.reactiverestapijava.model;
+
+import java.math.BigDecimal;
 
 public class DailyForecast {
     private String day_name;
-    private double temp_high_celsius;
+    private BigDecimal temp_high_celsius;
     private String forecast_blurp;
 
-    public DailyForecast(String day_name, double temp_high_celsius, String forecast_blurp) {
+    public DailyForecast(String day_name, BigDecimal temp_high_celsius, String forecast_blurp) {
         this.day_name = day_name;
         this.temp_high_celsius = temp_high_celsius;
         this.forecast_blurp = forecast_blurp;
@@ -20,11 +22,11 @@ public class DailyForecast {
         this.day_name = day_name;
     }
 
-    public double getTemp_high_celsius() {
+    public BigDecimal getTemp_high_celsius() {
         return temp_high_celsius;
     }
 
-    public void setTemp_high_celsius(double temp_high_celsius) {
+    public void setTemp_high_celsius(BigDecimal temp_high_celsius) {
         this.temp_high_celsius = temp_high_celsius;
     }
 
